@@ -32,6 +32,13 @@ body {
   margin-top: -150px;
  }
 
+ .info {
+  font-family: 'Roboto-Regular, sans-serif';
+  font-weight: 100;
+  margin-top:80px;
+  margin-left: 120px;
+}
+
  .card {
   position: absolute;
   font-family: 'Roboto-Regular, sans-serif';
@@ -43,13 +50,6 @@ body {
   right: 400px;
   border-radius: 8px;
   box-shadow: 1px 3px 2px 1px #4581e1;
-  font-size: 15px;
-  
+  font-size: 15px; 
 }
 
-.info {
-  font-family: 'Roboto-Regular, sans-serif';
-  font-weight: 100;
-  margin-top:80px;
-  margin-left: 120px;
-}
