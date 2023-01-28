@@ -68,7 +68,7 @@ function App() {
             )}
               <h1 className= "app-name">A decentralized Ethereum Application</h1>
             {isConnected ? (
-              <p className="info">🎉 Connected Successfully</p>
+              <p className="info">🎉 Connected Successfully!!!</p>
             ) : (
               <button className="btn" onClick={connectWallet}>
                 Connect
