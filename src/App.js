@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import './App.css'
 import logo from './assets/ethereum.png'
@@ -46,15 +46,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    // <div className="App-container">
+      <header>
         {haveMetamask ? (
           <div className="App-header">
             {isConnected ? (
               <div className="card">
                 <div className="card-row">
                   <h3>Wallet Address:</h3>
-                  <p>
+                  <p className='balance'>
                     {accountAddress}  
                   </p>
                 </div>
@@ -64,7 +64,9 @@ function App() {
                 </div>
               </div>
             ) : (
+              <div className='logo-box'>
               <img src={logo} className="App-logo" alt="logo" />
+              </div>
             )}
               <h1 className= "app-name">A decentralized Ethereum Application</h1>
             {isConnected ? (
@@ -79,7 +81,7 @@ function App() {
           <p>Please Install MataMask</p>
         )}
       </header>
-    </div>
+    // </div>
   );
 }
 export default App;
